@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container-login {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.formulario-login {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.formulario-login h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.grupo-form-login {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.grupo-form-login label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.grupo-form-login input {
+    width: 100%;
+    padding: 0.85rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grupo-form-login input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.grupo-form-login input.invalido {
+    border-color: #e53e3e;
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+.submit-btn-login {
+    background-color: #2ecc71;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn-login:hover {
+    background-color: #27ae60;
+}
+
+.submit-btn-login:active {
+    transform: scale(0.98);
+}
+
+.mensagem-erro-login {
+    color: #e53e3e;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.3rem;
+    min-height: 1em;
+}
+
+/* Estilo específico para a mensagem de erro geral */
+.mensagem-erro-login.geral {
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade simples para o login */
+@media (max-width: 480px) {
+    .formulario-login {
+        padding: 1.5rem;
+    }
+    .formulario-login h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+}

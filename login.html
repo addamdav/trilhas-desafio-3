@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login - Trilhas</title>
+</head>
+<body>
+<div class="container-login">
+    <form class="formulario-login" id="form-login" novalidate>
+        <h1>Login</h1>
+
+        <div class="grupo-form-login">
+            <label for="login-id-usuario">ID do Usuário:</label>
+            <input type="text" id="login-id-usuario" name="login-id-usuario" placeholder="Digite seu ID" required>
+            <span class="mensagem-erro-login" id="erro-login-id-usuario"></span>
+        </div>
+
+        <div class="grupo-form-login">
+            <label for="login-senha">Senha:</label>
+            <input type="password" id="login-senha" name="login-senha" placeholder="Digite sua senha" required>
+            <span class="mensagem-erro-login" id="erro-login-senha"></span>
+        </div>
+
+        <!-- Mensagem de erro geral para falha no login -->
+        <span class="mensagem-erro-login geral" id="erro-login-geral"></span>
+
+        <button type="submit" class="submit-btn-login">Entrar</button>
+
+        <p style="text-align: center; margin-top: 1rem;">
+            Não tem uma conta? <a href="index.html">Inscreva-se</a>
+        </p>
+    </form>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
